@@ -6,7 +6,7 @@ function getQuote() {
     }).then(displayQuote);
 }
 
-getQuote();
+
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -14,3 +14,10 @@ function displayQuote(quoteData) {
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
 }
+
+  // Event listener for search button
+  $("#button-xlarge").on("click", function (event) {
+    event.preventDefault();
+    getQuote();
+    // Call function to add to array/local storage here?
+  });
