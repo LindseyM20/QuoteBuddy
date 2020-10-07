@@ -6,6 +6,10 @@ function getQuote() {
     }).then(displayQuote);
 }
 
+
+
+
+
   // Event listener for search button
   $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
@@ -44,10 +48,20 @@ function saveQuote(quote) {
   localStorage.setItem("saved", JSON.stringify(savedQuotes));
 }
 
+// function voiceChooser (){
+
+// }
+
+$("option").on("click", function (){
+    voice = $(this).attr("name")
+    language = $(this).attr("language")
+    console.log(voice)
+    console.log(language)
+})
+
 // voice to text
-// var quote = ""
-var english = "en-au"
-var voice = "jack"
+var language = ""
+var voice = ""
 
 $("#voice").on("click", function (event){
   event.preventDefault();
@@ -55,7 +69,7 @@ $("#voice").on("click", function (event){
   $.speech({
       key: 'c20c4262b40342378e9a0c89ff525317',
       src: quote,
-      hl: english,
+      hl: language,
       v: voice,
       r: 0, 
       c: 'mp3',
