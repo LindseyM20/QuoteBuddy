@@ -10,12 +10,23 @@ function getQuote() {
   $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
     getQuote();
+    moveStuffAround();
     // Call function to add to array/local storage here?
   });
+
+function moveStuffAround() {
+  $("#chooseVoice").css("display", "flex");
+  $("#intro").css("display", "none");
+  $("#getQuote").removeClass("getQuoteIntro");
+  $("#getQuote").addClass("getQuoteFinal");
+  $("#quoteBtn").removeClass("introBtn");
+  $("#quoteBtn").addClass("finalBtn");
+}
+
+
 var quote = "" 
 var quoteHere = $("#quoteHere")
-var genreHere = $("#genreHere")
-var authorHere = $("#authorHere")
+var authorSubjectHere = $("#authorSubjectHere")
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -23,8 +34,7 @@ function displayQuote(quoteData) {
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
     quoteHere.text(quoteData.quote.quoteText);
-    genreHere.text(quoteData.quote.quoteGenre);
-    authorHere.text(quoteData.quote.quoteAuthor)
+    authorSubjectHere.text(quoteData.quote.quoteAuthor + " on " + quoteData.quote.quoteGenre)
 
     quote = quoteData.quote.quoteText
 }
