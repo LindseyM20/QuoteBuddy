@@ -6,29 +6,52 @@ body {
   background: linear-gradient(180deg, rgb(86, 82, 138) 1%, rgb(224, 68, 68));
 }
 
-#Q {
+/* #Q {
   display: inline-flex;
-  /* padding: 40px 0px -10px 20px;
+  padding: 40px 0px -10px 20px;
   color: white;
-  text-align: center; */
-}
+  text-align: center;
+} */
 
 h1 {
-  display: inline-flex;
+  /* display: inline-flex; */
   padding: 10px 10px 10px 10px;
   color: white;
   text-align: center;
 }
 
-.button-xlarge {
-  font-size: 145%;
-  display: flex auto;
+#getQuote {
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#intro {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+}
+
+#quoteBtn {
+  font-size: 165%;
+  padding: 5px 30px 5px 30px;
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #chooseVoice {
   padding: 50px;
   align-content: center;
-  /* display: none; */
+  display: none;
 }
 
 

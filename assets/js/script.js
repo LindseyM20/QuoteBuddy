@@ -7,7 +7,7 @@ function getQuote() {
 }
 
   // Event listener for search button
-  $("#getQuote").on("click", function (event) {
+  $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
     getQuote();
     // Call function to add to array/local storage here?
