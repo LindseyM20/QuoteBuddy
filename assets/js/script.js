@@ -6,7 +6,13 @@ function getQuote() {
     }).then(displayQuote);
 }
 
-getQuote();
+  // Event listener for search button
+  $("#getQuote").on("click", function (event) {
+    event.preventDefault();
+    getQuote();
+    // Call function to add to array/local storage here?
+  });
+ 
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -29,3 +35,23 @@ function saveQuote(quote) {
   savedQuotes.unshift(quote);
   localStorage.setItem("saved", JSON.stringify(savedQuotes));
 }
+
+// voice to text
+var quote = "Good morning Josh and Lindsey"
+var english = "en-au"
+var voice = "jack"
+
+$("#voice").on("click", function (event){
+  event.preventDefault();
+
+  $.speech({
+      key: 'c20c4262b40342378e9a0c89ff525317',
+      src: quote,
+      hl: english,
+      v: voice,
+      r: 0, 
+      c: 'mp3',
+      f: '44khz_16bit_stereo',
+      ssml: false
+  });
+})
