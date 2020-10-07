@@ -14,3 +14,24 @@ function displayQuote(quoteData) {
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
 }
+
+
+// voice to text
+var quote = "Good morning Josh and Lindsey"
+var english = "en-au"
+var voice = "jack"
+
+$(".pure-button").on("click", function (event){
+  event.preventDefault();
+
+  $.speech({
+      key: 'c20c4262b40342378e9a0c89ff525317',
+      src: quote,
+      hl: english,
+      v: voice,
+      r: 0, 
+      c: 'mp3',
+      f: '44khz_16bit_stereo',
+      ssml: false
+  });
+})
