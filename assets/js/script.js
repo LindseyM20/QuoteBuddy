@@ -12,13 +12,15 @@ function getQuote() {
     getQuote();
     // Call function to add to array/local storage here?
   });
- 
-
+  var quote = "" 
+var quoteHere = $("#quoteHere")
 function displayQuote(quoteData) {
     console.log(quoteData);
     console.log(quoteData.quote.quoteAuthor);
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
+    quoteHere.text(quoteData.quote.quoteText);
+    quote = quoteData.quote.quoteText
 }
 
 // Getting previously saved quotes from local storage and creating a new array if one does not exist
@@ -37,7 +39,7 @@ function saveQuote(quote) {
 }
 
 // voice to text
-var quote = "Good morning Josh and Lindsey"
+// var quote = ""
 var english = "en-au"
 var voice = "jack"
 
