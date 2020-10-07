@@ -1,10 +1,23 @@
-body {
+/* body {
   background-color:  rgb(206, 202, 211);
+} */
+
+body {
+  background: linear-gradient(90deg, rgb(124, 121, 167) 1%, rgb(228, 122, 122)); 
 }
 
-.header {
-  background: linear-gradient(180deg, rgb(86, 82, 138) 1%, rgb(224, 68, 68));
+.header,
+.footer {
+  background: linear-gradient(270deg, rgb(86, 82, 138) 1%, rgb(224, 68, 68));
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
 
 /* #Q {
   display: inline-flex;
@@ -46,6 +59,8 @@ h1 {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border-radius: 4px;
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); */
 }
 
 #chooseVoice {
