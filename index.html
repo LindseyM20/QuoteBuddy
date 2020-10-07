@@ -17,36 +17,40 @@
 </head>
 
 <body>
-  <div class="header pure-u-1">
+  <header class="header pure-u-1">
     <!-- <img id="Q" src="assets/images/q-logo.svg" alt="Q-shaped speech bubble" height="40" width="40"> -->
     <h1>Quote Generator</h1>
-  </div>
-  <div id="getQuote">
-    <h3 id="intro"> Click the button to generate a random quote!</h3>
-    <button id="quoteBtn" class="pure-button button-xlarge pure-button-primary pure-input-1"><i
-        class="far fa-comment"></i></button>
-  </div>
+  </header>
 
-  <div id="quoteArea">
-    <h5 id="genreHere"></h5>
-    <p id="quoteHere"></p>
-    <p id="authorHere"></p>
-  </div>
+  <main class="centerEverything">
+    <div id="quoteArea">
+      <h3 id="quoteHere"></h3>
+      <p id="authorSubjectHere"></p>
+    </div>
 
-  <form class="pure-form pure-form-stacked" id="chooseVoice">
-    <fieldset class="dropdown">
-      <div class="pure-u-1 pure-u-md-1-3">
-        <label for="multi-state">Choose a voice</label>
-        <select id="multi-state" class="pure-input-1">
-          <option id="option-1" name = "Jack" language = "en-au">Jack (AU)</option>
-          <option id="option-2" name = "Zoe" language = "en-au">Zoe</option>
-          <option id="option-3">Harry</option>
-          <option id="otpion-4">Linda</option>
-        </select>
-      </div>
-      <button type="submit" id="voice" class="pure-button pure-button-primary pure-input-1">Let's hear it!</button>
-    </fieldset>
-  </form>
+    <form class="pure-form pure-form-stacked" id="chooseVoice">
+      <fieldset class="dropdown">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <label for="multi-state">Choose a voice</label>
+          <input list="names" id="multi-state" class="pure-input-1">
+          <datalist id="names">
+            <option value="Jack">
+            <option value="Zoe">
+            <option value="Linda">
+            <option value="Harry">
+          </datalist>
+          </input>
+        </div>
+        <button type="submit" id="voice" class="pure-button pure-button-primary pure-input-1">Let's hear it!</button>
+      </fieldset>
+    </form>
+
+    <div id="getQuote" class="getQuoteIntro">
+      <h3 id="intro"> Click the button to generate a random quote!</h3>
+      <button id="quoteBtn" class="introBtn pure-button button-xlarge pure-button-primary pure-input-1"><i
+          class="far fa-comment"></i></button>
+    </div>
+  </main>
 
   <footer class="footer pure-u-1"><small>&copy; Copyright 2020</small></footer>
 

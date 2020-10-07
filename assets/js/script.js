@@ -1,3 +1,4 @@
+
 function getQuote() {
     var queryURL = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
     $.ajax({
@@ -6,20 +7,27 @@ function getQuote() {
     }).then(displayQuote);
 }
 
-
-
-
-
   // Event listener for search button
   $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
     getQuote();
+    moveStuffAround();
     // Call function to add to array/local storage here?
   });
+
+function moveStuffAround() {
+  $("#chooseVoice").css("display", "flex");
+  $("#intro").css("display", "none");
+  $("#getQuote").removeClass("getQuoteIntro");
+  $("#getQuote").addClass("getQuoteFinal");
+  $("#quoteBtn").removeClass("introBtn");
+  $("#quoteBtn").addClass("finalBtn");
+}
+
+
 var quote = "" 
 var quoteHere = $("#quoteHere")
-var genreHere = $("#genreHere")
-var authorHere = $("#authorHere")
+var authorSubjectHere = $("#authorSubjectHere")
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -27,8 +35,7 @@ function displayQuote(quoteData) {
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
     quoteHere.text(quoteData.quote.quoteText);
-    genreHere.text(quoteData.quote.quoteGenre);
-    authorHere.text(quoteData.quote.quoteAuthor)
+    authorSubjectHere.text(quoteData.quote.quoteAuthor + " on " + quoteData.quote.quoteGenre)
 
     quote = quoteData.quote.quoteText
 }
@@ -48,20 +55,10 @@ function saveQuote(quote) {
   localStorage.setItem("saved", JSON.stringify(savedQuotes));
 }
 
-// function voiceChooser (){
-
-// }
-
-$("option").on("click", function (){
-    voice = $(this).attr("name")
-    language = $(this).attr("language")
-    console.log(voice)
-    console.log(language)
-})
-
 // voice to text
-var language = ""
-var voice = ""
+// var quote = ""
+var english = "en-au"
+var voice = "jack"
 
 $("#voice").on("click", function (event){
   event.preventDefault();
@@ -69,7 +66,7 @@ $("#voice").on("click", function (event){
   $.speech({
       key: 'c20c4262b40342378e9a0c89ff525317',
       src: quote,
-      hl: language,
+      hl: english,
       v: voice,
       r: 0, 
       c: 'mp3',
