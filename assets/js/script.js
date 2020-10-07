@@ -12,14 +12,20 @@ function getQuote() {
     getQuote();
     // Call function to add to array/local storage here?
   });
-  var quote = "" 
+var quote = "" 
 var quoteHere = $("#quoteHere")
+var genreHere = $("#genreHere")
+var authorHere = $("#authorHere")
+
 function displayQuote(quoteData) {
     console.log(quoteData);
     console.log(quoteData.quote.quoteAuthor);
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
     quoteHere.text(quoteData.quote.quoteText);
+    genreHere.text(quoteData.quote.quoteGenre);
+    authorHere.text(quoteData.quote.quoteAuthor)
+
     quote = quoteData.quote.quoteText
 }
 
