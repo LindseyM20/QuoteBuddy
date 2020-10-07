@@ -6,7 +6,13 @@ function getQuote() {
     }).then(displayQuote);
 }
 
-getQuote();
+  // Event listener for search button
+  $("#getQuote").on("click", function (event) {
+    event.preventDefault();
+    getQuote();
+    // Call function to add to array/local storage here?
+  });
+ 
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -21,7 +27,7 @@ var quote = "Good morning Josh and Lindsey"
 var english = "en-au"
 var voice = "jack"
 
-$(".pure-button").on("click", function (event){
+$("#voice").on("click", function (event){
   event.preventDefault();
 
   $.speech({
