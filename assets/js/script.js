@@ -10,8 +10,20 @@ function getQuote() {
   $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
     getQuote();
+    moveStuffAround();
     // Call function to add to array/local storage here?
   });
+
+function moveStuffAround() {
+  $("#chooseVoice").css("display", "flex");
+  $("#intro").css("display", "none");
+  $("#getQuote").removeClass("getQuoteIntro");
+  $("#getQuote").addClass("getQuoteFinal");
+  $("#quoteBtn").removeClass("introBtn");
+  $("#quoteBtn").addClass("finalBtn");
+}
+
+
 var quote = "" 
 var quoteHere = $("#quoteHere")
 var authorSubjectHere = $("#authorSubjectHere")

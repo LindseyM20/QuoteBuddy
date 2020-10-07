@@ -1,5 +1,9 @@
-/* body {
-  background-color:  rgb(206, 202, 211);
+/* .centerEverything {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 3px solid green;
 } */
 
 body {
@@ -33,7 +37,7 @@ h1 {
   text-align: center;
 }
 
-#getQuote {
+.getQuoteIntro {
   margin: 0;
   width: 90%;
   position: absolute;
@@ -43,27 +47,50 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.getQuoteFinal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  /* top: 44%; */
+  /* left: 50%; */
+  /* -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
 #intro {
   text-align: center;
   color: white;
   padding-bottom: 20px;
 }
 
-#quoteBtn {
+.introBtn {
   font-size: 165%;
   padding: 5px 30px 5px 30px;
   margin: 0;
-  width: 90%;
+  width: 60%;
+  border-radius: 4px;
   position: absolute;
   top: 100%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border-radius: 4px;
   /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); */
 }
 
+.finalBtn {
+  font-size: 165%;
+  padding: 5px 30px 5px 30px;
+  margin: 0;
+  width: 60%;
+  border-radius: 4px;
+  position: static;
+}
+
 #quoteArea {
+  margin-top: 10px;
   padding: 16px;
 }
 
@@ -76,8 +103,11 @@ h1 {
 }
 
 #chooseVoice {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   padding: 50px;
-  align-content: center;
+  /* align-content: center; */
   display: none;
 }
 
