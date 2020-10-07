@@ -1,3 +1,7 @@
+body {
+  background-color:  rgb(206, 202, 211);
+}
+
 .header {
   background: linear-gradient(180deg, rgb(86, 82, 138) 1%, rgb(224, 68, 68));
 }
@@ -17,6 +21,7 @@ h1 {
 }
 
 #chooseLang {
+  padding: 10px;
   align-content: center;
   /* display: none; */
 }
