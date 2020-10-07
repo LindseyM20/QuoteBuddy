@@ -14,8 +14,7 @@ function getQuote() {
   });
 var quote = "" 
 var quoteHere = $("#quoteHere")
-var genreHere = $("#genreHere")
-var authorHere = $("#authorHere")
+var authorSubjectHere = $("#authorSubjectHere")
 
 function displayQuote(quoteData) {
     console.log(quoteData);
@@ -23,8 +22,7 @@ function displayQuote(quoteData) {
     console.log(quoteData.quote.quoteGenre);
     console.log(quoteData.quote.quoteText);
     quoteHere.text(quoteData.quote.quoteText);
-    genreHere.text(quoteData.quote.quoteGenre);
-    authorHere.text(quoteData.quote.quoteAuthor)
+    authorSubjectHere.text(quoteData.quote.quoteAuthor + " on " + quoteData.quote.quoteGenre)
 
     quote = quoteData.quote.quoteText
 }
