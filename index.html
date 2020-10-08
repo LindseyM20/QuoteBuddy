@@ -23,20 +23,20 @@
   </header>
 
   <main class="centerEverything">
+    <!-- Quote is displayed here -->
     <div id="quoteArea">
       <h3 id="quoteHere"></h3>
       <p id="authorSubjectHere"></p>
-      <button id="saveBtn" class="pure-button pure-button-primary pure-input-1">Keep This One</button>
+      <!-- Button to save the quote -->
+      <button id="saveBtn" class="pure-button pure-button-primary pure-input-1"><i class="far fa-heart"></i></button>
     </div>
 
     <form class="pure-form pure-form-stacked" id="chooseVoice">
       <fieldset class="dropdown">
-        <!-- <div class="pure-u-1 pure-u-md-1-3"> -->
-          <label for="multi-state">Choose a voice</label>
+          <label id="choose" for="multi-state">Choose a voice</label>
           <select id="name-selector" class="pure-input-1">
             <optgroup label="English - Australia">
               <option id="Jack">Jack</option>
-              <option id="Zoe">Zoe</option>
               <option id="Isla">Isla</option>
             </optgroup>
             <optgroup label="English - Great Britain">
@@ -45,22 +45,17 @@
             </optgroup>
             <optgroup label="English - United States">
               <option id="Linda">Linda</option>
-              <option id="Mike">Mike</option>
               <option id="John">John</option>
             </optgroup>
             <optgroup label="English - Ireland">
               <option id="Oran">Oran</option>
             </optgroup>
-            <optgroup label="English - India">
-              <option id="Eka">Eka</option>
-              <option id="Ajit">Ajit</option>
             </optgroup>
             <optgroup label="English - Canada">
               <option id="Rose">Rose</option>
               <option id="Mason">Mason</option>
             </optgroup>
           </select>
-        <!-- </div> -->
         <button type="submit" id="voice" class="pure-button pure-button-primary pure-input-1">Let's hear it!</button>
       </fieldset>
     </form>
