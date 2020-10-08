@@ -57,14 +57,14 @@ function renderSaved() {
   var quoteHistory = $("#oldQuotes")
   quoteHistory.empty()
   savedQuotes.forEach(function(q, i) {
+    var qArray = q.split('"')
     quoteHistory.append($("<div>" + 
-      "<p>" + q + "</p>" +
-      '<button id="display' + i + '" class="displayBtn pure-button">' + 
-      '<i class="far fa-comment"></i></button>' + 
-      '<button id="del' + i + '" class="delBtn pure-button">' + 
+      '<button id="display' + i + '" class="displayBtn pure-button pure-input-1">' + q.substring(0, 20) +
+      '... </button>' + 
+      '<button id="del' + i + '" class="delBtn pure-button pure-button-primary pure-input-1">' + 
       'X</button></div>'))
     $("#display" + i).on("click", function() {
-      var qArray = q.split('"')
+      // var qArray = q.split('"')
       quote = qArray[1]
       quoteHere.text(qArray[1])
       authorSubjectHere.text(qArray[2].substring(2))

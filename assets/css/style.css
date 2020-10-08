@@ -36,6 +36,14 @@ h1 {
   color: white;
   text-align: center;
 }
+ 
+p {
+  color: white;
+  text-align: center;
+}
+label {
+  color: white;
+}
 
 .getQuoteIntro {
   margin: 0;
@@ -65,7 +73,14 @@ h1 {
   color: white;
   padding-bottom: 20px;
 }
+.displayBtn {
+  background-color: rgb(228, 122, 122);
+  width: 60%;
+}
+.delBtn {
+  background-color: rgb(124, 121, 167);
 
+}
 .introBtn {
   font-size: 165%;
   padding: 5px 30px 5px 30px;
@@ -114,4 +129,8 @@ h1 {
 #saveBtn {
   justify-content: center;
   display: none;
+}
+
+.button {
+  background-color:  rgb(86, 82, 138)
 }
