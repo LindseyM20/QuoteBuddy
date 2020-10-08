@@ -20,6 +20,7 @@ body {
   bottom: 0;
   text-align: center;
   color: white;
+  padding: 4px;
 }
 
 .displayBtn {
@@ -72,7 +73,7 @@ h1 {
 }
 
 .introBtn {
-  font-size: 165%;
+  font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
@@ -86,7 +87,7 @@ h1 {
 }
 
 .finalBtn {
-  font-size: 165%;
+  font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
@@ -117,6 +118,41 @@ h1 {
 }
 
 #saveBtn {
-  justify-content: center;
   display: none;
+  font-size: 200%;
+  padding: 5px 30px 5px 30px;
+  margin: 0;
+  width: 60%;
+  position: static;
+
+  /* justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 45%;
+  right: 45%; */
+  
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .finalBtn {
+    width: 40%;
+    position: relative;
+    right: 60px
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .finalBtn {
+    width: 30%;
+    position: relative;
+    right: 80px
+  }
 }
