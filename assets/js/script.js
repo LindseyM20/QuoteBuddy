@@ -55,13 +55,34 @@ function saveQuote(quote) {
   localStorage.setItem("saved", JSON.stringify(savedQuotes));
 }
 
+
+
+
+
+
+
 // voice to text
 // var quote = ""
-var english = "en-au"
-var voice = "jack"
+var english = ""
+var voice = ""
 
 $("#voice").on("click", function (event){
   event.preventDefault();
+
+
+  var voice =   $("#name-selector").val();
+  
+  if (voice === "Jack" || voice === "Zoe"){
+      english = "en-au"
+  }
+  if (voice === "Harry"){
+      english = "en-gb"
+  }
+  if (voice === "Linda") {
+      english = "en-us"
+  }
+console.log(voice)
+console.log(english)
 
   $.speech({
       key: 'c20c4262b40342378e9a0c89ff525317',
