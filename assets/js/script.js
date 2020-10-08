@@ -7,6 +7,22 @@ function getQuote() {
   }).then(displayQuote);
 }
 
+function betterGetQuote() {
+  var queryURL = "https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en";
+  $.ajax({
+    url: queryURL,
+    type: "GET"
+  }).then(betterDisplayQuote);
+}
+
+// Event listener for search button
+$("#quoteBtn").on("click", function (event) {
+  event.preventDefault();
+  betterGetQuote();
+  moveStuffAround();
+  // Call function to add to array/local storage here?
+});
+
 function moveStuffAround() {
   $("#chooseVoice").css("display", "flex");
   $("#intro").css("display", "none");
@@ -27,6 +43,15 @@ function displayQuote(quoteData) {
   $("#saveBtn").css("display", "block");
   $("#saveBtn").addClass("pure-u-1-5");
   quote = quoteData.quote.quoteText;
+  renderSaved();
+}
+
+function betterDisplayQuote(quoteData) {
+  quoteHere.text(quoteData.quoteText);
+  authorSubjectHere.text(quoteData.quoteAuthor);
+  $("#saveBtn").show();
+  // $("#saveBtn").addClass("pure-u-1-5");
+  quote = quoteData.quoteText;
   renderSaved();
 }
 
@@ -118,7 +143,7 @@ $("#voice").on("click", function (event) {
 // Event listener for search button
 $("#quoteBtn").on("click", function (event) {
   event.preventDefault();
-  getQuote();
+  betterGetQuote();
   moveStuffAround();
   // Call function to add to array/local storage here?
 });

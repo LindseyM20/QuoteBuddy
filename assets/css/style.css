@@ -24,6 +24,7 @@ body {
 
 .text {
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* #Q {
@@ -102,6 +103,7 @@ h1 {
 }
 
 .introBtn {
+  color: rgb(224, 68, 68);
   font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
@@ -116,6 +118,7 @@ h1 {
 }
 
 .finalBtn {
+  color: rgb(224, 68, 68);
   font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
@@ -125,8 +128,8 @@ h1 {
 }
 
 #saveBtn {
-  background-color: rgb(224, 68, 68);
-  /* display: none; */
+  color: rgb(224, 68, 68);
+  display: none;
   /* padding: 5px 30px 5px 30px;
   margin: 0;
   position: static;
@@ -144,6 +147,7 @@ h1 {
 }
 
 .delBtn {
+  color: rgb(224, 68, 68);
   /* width: 40px; */
 }
 
