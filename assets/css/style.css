@@ -12,17 +12,20 @@ body {
 
 .header,
 .footer {
-  background: linear-gradient(270deg, rgb(86, 82, 138) 1%, rgb(224, 68, 68));
+  background: linear-gradient(270deg, rgb(72, 69, 119) 1%, rgb(224, 68, 68));
 }
 
 .footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  color: white;
   padding: 4px;
 }
 
+.text {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* #Q {
   display: inline-flex;
@@ -34,7 +37,6 @@ body {
 h1 {
   /* display: inline-flex; */
   padding: 10px 10px 10px 10px;
-  color: white;
   text-align: center;
 }
 
@@ -63,7 +65,6 @@ h1 {
 
 #intro {
   text-align: center;
-  color: white;
   padding-bottom: 20px;
 }
 
@@ -74,7 +75,6 @@ h1 {
 
 #quoteHere,
 #authorSubjectHere {
-  color: white;
   text-align: center;
   font-weight: 400;
   line-height: 150%;
@@ -88,12 +88,22 @@ h1 {
   /* align-content: center; */
   display: none;
 }
+#oldQuotes {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  align-items: center;
+  justify-content: center;
+  margin: 30px 30px 80px 30px;
+}
 
 .pure-button {
   border-radius: 4px;
+  background-color: rgb(72, 69, 119);
 }
 
 .introBtn {
+  color: rgb(224, 68, 68);
   font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
@@ -108,6 +118,7 @@ h1 {
 }
 
 .finalBtn {
+  color: rgb(224, 68, 68);
   font-size: 200%;
   padding: 5px 30px 5px 30px;
   margin: 0;
@@ -117,23 +128,27 @@ h1 {
 }
 
 #saveBtn {
+  color: rgb(224, 68, 68);
   display: none;
-  font-size: 200%;
-  padding: 5px 30px 5px 30px;
+  /* padding: 5px 30px 5px 30px;
   margin: 0;
-  width: 60%;
   position: static;
 
   justify-content: center;
   align-items: center;
-  /* position: absolute;
+  position: absolute;
   left: 45%;
   right: 45%; */
   
 }
 
 .displayBtn {
-  width: 20%;
+  width: 60%;
+}
+
+.delBtn {
+  color: rgb(224, 68, 68);
+  /* width: 40px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -145,6 +160,9 @@ h1 {
     width: 40%;
     position: relative;
     right: 60px
+  }
+  .displayBtn {
+    width: 40%;
   }
 }
 
