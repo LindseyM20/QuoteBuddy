@@ -72,15 +72,25 @@ $("#voice").on("click", function (event){
 
   var voice =   $("#name-selector").val();
   
-  if (voice === "Jack" || voice === "Zoe"){
+  if (voice === "Jack" || voice === "Zoe" || voice ==="Isla"){
       english = "en-au"
   }
-  if (voice === "Harry"){
+  if (voice === "Harry" || voice === "Alice"){
       english = "en-gb"
   }
-  if (voice === "Linda") {
+  if (voice === "Linda" || voice === "Mike" || voice === "John") {
       english = "en-us"
   }
+  if (voice === "Oran"){
+    english = "en-ie"
+  }
+  if (voice === "Eka" || voice ==="Ajit"){
+    english = "en-in"
+  }
+  if (voice === "Rose" || voice === "Mason") {
+    english = "en-ca"
+  }
+
 console.log(voice)
 console.log(english)
 
