@@ -7,10 +7,18 @@ function getQuote() {
     }).then(displayQuote);
 }
 
+function betterGetQuote() {
+  var queryURL = "https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en";
+  $.ajax({
+    url: queryURL,
+    type: "GET"
+  }).then(betterDisplayQuote);
+}
+
   // Event listener for search button
   $("#quoteBtn").on("click", function (event) {
     event.preventDefault();
-    getQuote();
+    betterGetQuote();
     moveStuffAround();
     // Call function to add to array/local storage here?
   });
@@ -35,6 +43,15 @@ function displayQuote(quoteData) {
     $("#saveBtn").css("display", "flex");
     quote = quoteData.quote.quoteText;
     renderSaved();
+}
+
+function betterDisplayQuote(quoteData) {
+  quoteHere.text(quoteData.quoteText);
+  authorSubjectHere.text(quoteData.quoteAuthor);
+  $("#saveBtn").css("display", "block");
+  $("#saveBtn").addClass("pure-u-1-5");
+  quote = quoteData.quoteText;
+  renderSaved();
 }
 
 // Getting previously saved quotes from local storage and creating a new array if one does not exist
