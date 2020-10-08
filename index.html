@@ -26,11 +26,12 @@
     <div id="quoteArea">
       <h3 id="quoteHere"></h3>
       <p id="authorSubjectHere"></p>
+      <button id="saveBtn" class="pure-button pure-button-primary pure-input-1">Keep This One</button>
     </div>
 
     <form class="pure-form pure-form-stacked" id="chooseVoice">
       <fieldset class="dropdown">
-        <div class="pure-u-1 pure-u-md-1-3">
+        <!-- <div class="pure-u-1 pure-u-md-1-3"> -->
           <label for="multi-state">Choose a voice</label>
           <select id="name-selector" class="pure-input-1">
             <optgroup label="English - Australia">
@@ -59,7 +60,7 @@
               <option id="Mason">Mason</option>
             </optgroup>
           </select>
-        </div>
+        <!-- </div> -->
         <button type="submit" id="voice" class="pure-button pure-button-primary pure-input-1">Let's hear it!</button>
       </fieldset>
     </form>
@@ -69,6 +70,10 @@
       <button id="quoteBtn" class="introBtn pure-button button-xlarge pure-button-primary pure-input-1"><i
           class="far fa-comment"></i></button>
     </div>
+
+    <!-- This is a hack solution becuase there's overlap and I don't know why -->
+    <br><br><br><br><br>
+    <div id="oldQuotes"></div>
   </main>
 
   <footer class="footer pure-u-1"><small>&copy; Copyright 2020</small></footer>
