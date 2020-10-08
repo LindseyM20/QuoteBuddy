@@ -22,6 +22,13 @@ body {
   color: white;
 }
 
+displayBtn {
+width: 20%
+}
+delBtn {
+
+}
+
 
 /* #Q {
   display: inline-flex;
@@ -60,22 +67,10 @@ h1 {
   transform: translate(-50%, -50%); */
 }
 
-#choose {
-  color: white;
-  text-align: center;
-}
-
 #intro {
   text-align: center;
   color: white;
   padding-bottom: 20px;
-}
-
-.pure-button {
-  border-radius: 4px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .introBtn {
@@ -83,6 +78,7 @@ h1 {
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
+  border-radius: 4px;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -96,14 +92,13 @@ h1 {
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
+  border-radius: 4px;
   position: static;
 }
 
 #quoteArea {
   margin-top: 10px;
   padding: 16px;
-  justify-content: center;
-  align-items: center;
 }
 
 #quoteHere,
@@ -125,14 +120,5 @@ h1 {
 
 #saveBtn {
   justify-content: center;
-  position: static;
   display: none;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
 }

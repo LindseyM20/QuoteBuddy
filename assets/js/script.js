@@ -58,9 +58,8 @@ function renderSaved() {
   quoteHistory.empty()
   savedQuotes.forEach(function(q, i) {
     quoteHistory.append($("<div>" + 
-      "<p>" + q + "</p>" +
-      '<button id="display' + i + '" class="displayBtn pure-button pure-button-primary pure-input-1">' + 
-      '<i class="far fa-comment"></i></button>' + 
+      '<button id="display' + i + '" class="displayBtn pure-buttonpure-button-primary pure-input-1">' 
+      + q.substring(0, 15) + '...</button>' + 
       '<button id="del' + i + '" class="delBtn pure-button pure-button-primary pure-input-1">' + 
       '<i class="fas fa-times"></i></button></div>'))
     $("#display" + i).on("click", function() {
