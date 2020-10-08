@@ -23,13 +23,6 @@ body {
   padding: 4px;
 }
 
-displayBtn {
-width: 20%
-}
-delBtn {
-
-}
-
 
 /* #Q {
   display: inline-flex;
@@ -74,6 +67,32 @@ h1 {
   padding-bottom: 20px;
 }
 
+#quoteArea {
+  margin-top: 10px;
+  padding: 16px;
+}
+
+#quoteHere,
+#authorSubjectHere {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#chooseVoice {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 50px;
+  /* align-content: center; */
+  display: none;
+}
+
+.pure-button {
+  border-radius: 4px;
+}
+
 .introBtn {
   font-size: 200%;
   padding: 5px 30px 5px 30px;
@@ -97,28 +116,6 @@ h1 {
   position: static;
 }
 
-#quoteArea {
-  margin-top: 10px;
-  padding: 16px;
-}
-
-#quoteHere,
-#authorSubjectHere {
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  line-height: 150%;
-}
-
-#chooseVoice {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 50px;
-  /* align-content: center; */
-  display: none;
-}
-
 #saveBtn {
   display: none;
   font-size: 200%;
@@ -127,12 +124,16 @@ h1 {
   width: 60%;
   position: static;
 
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   left: 45%;
   right: 45%; */
   
+}
+
+.displayBtn {
+  width: 20%;
 }
 
 @media screen and (min-width: 768px) {
