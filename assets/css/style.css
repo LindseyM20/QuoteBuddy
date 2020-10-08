@@ -71,9 +71,9 @@ h1 {
   padding-bottom: 20px;
 }
 
-button {
+.pure-button {
   border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
@@ -83,7 +83,6 @@ button {
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
-  border-radius: 4px;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -97,13 +96,14 @@ button {
   padding: 5px 30px 5px 30px;
   margin: 0;
   width: 60%;
-  border-radius: 4px;
   position: static;
 }
 
 #quoteArea {
   margin-top: 10px;
   padding: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 #quoteHere,
@@ -128,7 +128,11 @@ button {
   position: static;
   display: none;
   align-items: center;
-  border-radius: 4px;
 }
 
-
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
