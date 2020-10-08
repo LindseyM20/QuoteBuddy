@@ -1,3 +1,4 @@
+
 function getQuote() {
     var queryURL = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
     $.ajax({
@@ -78,11 +79,36 @@ function renderSaved() {
 
 // voice to text
 // var quote = ""
-var english = "en-au"
-var voice = "jack"
+var english = ""
+var voice = ""
 
 $("#voice").on("click", function (event){
   event.preventDefault();
+
+
+  var voice =   $("#name-selector").val();
+  
+  if (voice === "Jack" || voice === "Zoe" || voice ==="Isla"){
+      english = "en-au"
+  }
+  if (voice === "Harry" || voice === "Alice"){
+      english = "en-gb"
+  }
+  if (voice === "Linda" || voice === "Mike" || voice === "John") {
+      english = "en-us"
+  }
+  if (voice === "Oran"){
+    english = "en-ie"
+  }
+  if (voice === "Eka" || voice ==="Ajit"){
+    english = "en-in"
+  }
+  if (voice === "Rose" || voice === "Mason") {
+    english = "en-ca"
+  }
+
+console.log(voice)
+console.log(english)
 
   $.speech({
       key: 'c20c4262b40342378e9a0c89ff525317',
