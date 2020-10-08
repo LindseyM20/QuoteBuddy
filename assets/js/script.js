@@ -62,7 +62,7 @@ function renderSaved() {
       '<button id="display' + i + '" class="displayBtn pure-button pure-button-primary pure-input-1">' + 
       '<i class="far fa-comment"></i></button>' + 
       '<button id="del' + i + '" class="delBtn pure-button pure-button-primary pure-input-1">' + 
-      'X</button></div>'))
+      '<i class="fas fa-times"></i></button></div>'))
     $("#display" + i).on("click", function() {
       var qArray = q.split('"')
       quote = qArray[1]
