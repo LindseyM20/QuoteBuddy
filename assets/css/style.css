@@ -60,10 +60,22 @@ h1 {
   transform: translate(-50%, -50%); */
 }
 
+#choose {
+  color: white;
+  text-align: center;
+}
+
 #intro {
   text-align: center;
   color: white;
   padding-bottom: 20px;
+}
+
+button {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .introBtn {
@@ -113,5 +125,10 @@ h1 {
 
 #saveBtn {
   justify-content: center;
+  position: static;
   display: none;
+  align-items: center;
+  border-radius: 4px;
 }
+
+
