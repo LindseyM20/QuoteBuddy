@@ -8,34 +8,35 @@ User can randomly generate a quote that will be spoken via text-to-voice. Langua
 
 ## User Story
 
-As an... international traveler
+As a person who seeks support at times
 
-I want... to generate random quotes, in a language of my choice
+I want a way to hear random thoughtful quotes in various accents
 
-So that... I can learn a new phrase to say in a different language
-
-
-## Resources to be used
-
-IBM Text to Speech API
-
-Quote Garden API
-
-(Later: Ron Swanson Quotes API, other similar APIs)
-
-Patternfly Framework
+So that I can feel inspired and motivated
 
 
-## Rough Breakdown of tasks
+## Technologies Used
 
-Make a repo with Kanban board
+HTML, CSS, JavaScript, JQuery
 
-learn the framework and create the basic wireframe (mobile-first)
-  adapt to larger screens
+Forismatic Quote API
 
-work with the quote garden API, get key
-work with the IBM text to speech API, get key
+Voice RSS Text to Speech API
 
-code the AJAX calls based on URLs/keys
+Local Storage
 
-develop localStorage for past searches
+Pure CSS Framework
+
+Github version control
+
+
+## Collaborators
+
+Lindsey Bordner https://github.com/LindseyM20
+
+Carl Koepke https://github.com/Carl-33
+
+Joshua Illg https://github.com/jishllg
+
+
+![QuoteBuddy on mobile device](./assets/images/QuoteScreenshot.png)
