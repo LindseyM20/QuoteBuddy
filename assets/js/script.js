@@ -20,7 +20,6 @@ $("#quoteBtn").on("click", function (event) {
   event.preventDefault();
   betterGetQuote();
   moveStuffAround();
-  // Call function to add to array/local storage here?
 });
 
 function moveStuffAround() {
@@ -145,7 +144,6 @@ $("#quoteBtn").on("click", function (event) {
   event.preventDefault();
   betterGetQuote();
   moveStuffAround();
-  // Call function to add to array/local storage here?
 });
 
 // Event listener for the button to save the currently shown quote
