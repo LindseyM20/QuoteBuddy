@@ -8,34 +8,37 @@ User can randomly generate a quote that will be spoken via text-to-voice. Accent
 
 ## User Story
 
-As a... person who seeks support at times
 
-I want... a way to hear random thoughtful quotes in various accents
+As a person who seeks support at times
 
-So that... I can feel inspired and motivated
+I want a way to hear random thoughtful quotes in various accents
+
+So that I can feel inspired and motivated
 
 
-## Resources to be used
+
+## Technologies Used
+
+HTML, CSS, JavaScript, JQuery
+
+Forismatic Quote API
 
 Voice RSS Text to Speech API
 
-Quote Garden API
+Local Storage
 
-(Later: Ron Swanson Quotes API, other similar APIs)
+Pure CSS Framework
 
-Pure Framework
+Github version control
 
 
-## Rough Breakdown of tasks
+## Collaborators
 
-Make a repo with Kanban board
+Lindsey Bordner https://github.com/LindseyM20
 
-learn the framework and create the basic wireframe (mobile-first)
-  adapt to larger screens
+Carl Koepke https://github.com/Carl-33
 
-work with the quote garden API, get key
-work with the IBM text to speech API, get key
+Joshua Illg https://github.com/jishllg
 
-code the AJAX calls based on URLs/keys
 
-develop localStorage for past searches
+![QuoteBuddy on mobile device](./assets/images/QuoteScreenshot.png)
