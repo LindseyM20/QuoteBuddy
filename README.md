@@ -1,4 +1,19 @@
-### QuoteBuddy
+# QuoteBuddy
+
+## Find This Project At:
+
+https://github.com/LindseyM20/QuoteBuddy
+
+https://lindseym20.github.io/QuoteBuddy/
+
+
+## Collaborators
+
+Lindsey Bordner https://github.com/LindseyM20
+
+Carl Koepke https://github.com/Carl-33
+
+Joshua Illg https://github.com/jishllg
 
 
 ## Description
@@ -31,14 +46,6 @@ Pure CSS Framework
 
 Github version control
 
-
-## Collaborators
-
-Lindsey Bordner https://github.com/LindseyM20
-
-Carl Koepke https://github.com/Carl-33
-
-Joshua Illg https://github.com/jishllg
 
 
 ![QuoteBuddy on mobile device](./assets/images/QuoteScreenshot.png)
