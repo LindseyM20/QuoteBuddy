@@ -1,29 +1,29 @@
-### Inspirational Quote Generator
+### QuoteBuddy
 
 
 ## Description
 
-User can randomly generate a quote that will be spoken via text-to-voice. Language can be chosen as well.
+User can randomly generate a quote that will be spoken via text-to-voice. Accent can be chosen as well.
 
 
 ## User Story
 
-As an... international traveler
+As a... person who seeks support at times
 
-I want... to generate random quotes, in a language of my choice
+I want... a way to hear random thoughtful quotes in various accents
 
-So that... I can learn a new phrase to say in a different language
+So that... I can feel inspired and motivated
 
 
 ## Resources to be used
 
-IBM Text to Speech API
+Voice RSS Text to Speech API
 
 Quote Garden API
 
 (Later: Ron Swanson Quotes API, other similar APIs)
 
-Patternfly Framework
+Pure Framework
 
 
 ## Rough Breakdown of tasks
