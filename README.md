@@ -42,3 +42,8 @@ Joshua Illg https://github.com/jishllg
 
 
 ![QuoteBuddy on mobile device](./assets/images/QuoteScreenshot.png)
+
+
+## License:
+
+The Unlicense
