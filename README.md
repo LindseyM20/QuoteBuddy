@@ -48,4 +48,6 @@ Github version control
 
 
 
-![QuoteBuddy on mobile device](./assets/images/QuoteScreenshot.png)
+## License:
+
+The Unlicense
