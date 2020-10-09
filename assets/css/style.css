@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(90deg, rgb(124, 121, 167) 1%, rgb(228, 122, 122)); 
+}
+
+.header,
+.footer {
+  width: 100%;
+  background: linear-gradient(270deg, rgb(72, 69, 119) 1%, rgb(224, 68, 68));
+  position: fixed;
+}
+
+.header {
+  top: 0;
+  margin-bottom: 5%;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.text {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  padding: 4%;
+  text-align: center;
+}
+
+.getQuoteIntro {
+  margin: 0 auto;
+  width: 90%;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.getQuoteFinal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+}
+
+#intro {
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+#quoteArea {
+  margin-top: 30%;
+  padding: 3%;
+}
+
+#quoteHere,
+#authorSubjectHere {
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#chooseVoice {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3%;
+  display: none;
+}
+#oldQuotes {
+  margin: 0 auto 10%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pure-button {
+  border-radius: 4px;
+  background-color: rgb(72, 69, 119);
+}
+
+.introBtn {
+  color: rgb(224, 68, 68);
+  font-size: 200%;
+  margin: 0;
+  width: 60%;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.finalBtn {
+  color: rgb(224, 68, 68);
+  font-size: 200%;
+  padding: 5px 30px 5px 30px;
+  margin: 0;
+  width: 60%;
+  border-radius: 4px;
+  position: static;
+}
+
+#saveBtn {
+  color: rgb(224, 68, 68);
+  display: none;
+}
+
+.displayBtn {
+  width: 60%;
+}
+
+.delBtn {
+  color: rgb(224, 68, 68);
+}
+
+@media screen and (min-width: 480px) {
+  #quoteArea {
+    margin: 24% 10% 0;
+    padding: 3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    padding: 3%;
+  }
+  #quoteArea {
+    margin: 20% 20% 0;
+    padding: 3%;
+  }
+  .finalBtn {
+    width: 40%;
+  }
+  .displayBtn {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    padding: 2%;
+  }
+  #quoteArea {
+    margin-top: 15%;
+    padding: 3%;
+  }
+  .finalBtn {
+    width: 30%;
+  }
+}
